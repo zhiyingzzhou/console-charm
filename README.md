@@ -2,6 +2,8 @@
 
 一个用于在控制台输出带样式信息的TypeScript库，支持多种模块格式（ESM、CJS、UMD、AMD）和美观的预设主题。
 
+[🚀 在线演示](https://zhiyingzzhou.github.io/console-charm/examples/basic.html)
+
 [📸 查看使用示例](#示例图片)
 
 ## ✨ 特性
