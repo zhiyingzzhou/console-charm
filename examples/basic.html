@@ -83,6 +83,8 @@
 
         <div class="notice">
             <strong>提示：</strong>请打开浏览器的开发者工具（F12），切换到控制台（Console）标签页，然后点击下面的按钮查看效果！
+            <br><br>
+            <strong>✨ CDN 引用：</strong>本示例现在使用 jsDelivr CDN 从 npm 包加载文件，无需本地构建即可运行！
         </div>
 
         <h2>基本使用</h2>
@@ -106,8 +108,13 @@
         </div>
 
         <h2>代码示例</h2>
+        
+        <h3>📦 NPM 安装使用</h3>
         <div class="code-block">
-<pre><code>// 基本使用
+<pre><code>// 安装
+npm install console-charm
+
+// 基本使用
 import { success, info, warning, error } from 'console-charm';
 
 success('操作成功');
@@ -126,10 +133,25 @@ buildInfo({
     commit: 'abc123def456'
 });</code></pre>
         </div>
+
+        <h3>🌐 CDN 使用方式</h3>
+        <div class="code-block">
+<pre><code><!-- 从 jsDelivr CDN 引入 -->
+&lt;script src="https://cdn.jsdelivr.net/npm/console-charm@latest/dist/umd/index.js"&gt;&lt;/script&gt;
+
+<!-- 或者指定具体版本 -->
+&lt;script src="https://cdn.jsdelivr.net/npm/console-charm@1.0.0/dist/umd/index.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// 使用全局变量 ConsoleCharm
+ConsoleCharm.success('操作成功');
+ConsoleCharm.info('提示信息');
+&lt;/script&gt;</code></pre>
+        </div>
     </div>
 
-    <!-- 引入构建后的UMD版本 -->
-    <script src="../dist/umd/index.js"></script>
+    <!-- 引入构建后的UMD版本 - 使用 jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/console-charm@latest/dist/umd/index.js"></script>
 
     <script>
         // 演示函数
